@@ -1,15 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ja">
-<meta charset="utf-8">
-<title>405 Method Not Allowed</title>
+<head>
+<meta charset="UTF-8">
+<title>404 Not Found</title>
 <style>
-body{text-align:center;font-family:sans-serif;margin:0}
-h1{background:#333;color:white;margin:0;padding:1em}
-.dummy{font-size:128px}
-</style>
+body{
+    margin:0;
+    min-height:100vh;
+    background:#000;
+    color:#33ff33;
+    font-family:"Courier New", monospace;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.screen{
+width:900px;
+max-width:90%;
+padding:32px;
+border:3px solid #33ff33;
+box-shadow:
+0 0 10px #33ff33,
+0 0 20px #33ff33,
+inset 0 0 20px rgba(51,255,51,0.2);
+text-align:center;
+}
+
+.status{
+    font-size:100px;
+    font-weight:bold;
+    letter-spacing:10px;
+    text-shadow:
+        4px 0 #006600,
+        0 4px #006600,
+        4px 4px #006600;
+}
+
+.subtitle{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.aa{
+    white-space: pre;
+    font-family: "Hiragino Sans", "Osaka", "MS PGothic", sans-serif;
+    font-size: 20px;
+    line-height: 1.0;
+    letter-spacing: 0;
+    text-align: left;
+    display: inline-block;
+    transform: scaleX(0.78);
+    transform-origin: center;
+}
+
+.box{
+border:2px solid #33ff33;
+padding:20px;
+margin-top:25px;
+text-align:left;
+}
+
+.menu{
+margin-top:25px;
+}
+
+.menu p{
+margin:8px 0;
+}
+
+.blink{
+animation:blink 1s steps(1) infinite;
+}
+
+@keyframes blink{
+50%{
+opacity:0;
+}
+}
+
+.system-message{
+    font-size:20px;
+    font-weight:bold;
+    letter-spacing:3px;
+    text-shadow:3px 3px #006600;
+    margin-bottom:16px;
+}
+
+.footer{
+margin-top:30px;
+font-size:14px;
+color:#66ff66;
+} </style>
+
+</head>
+
 <body>
-<h1>405 Method Not Allowed</h1>
-<div class="dummy">🚫</div>
-<p>そのやり方、ここでは使えへんで。GETとかPOSTの話や。</p>
+<main class="screen">
+
+<div class="status">405</div>
+<div class="subtitle"> REQUEST REJECTED </div>
+
+<pre class="aa">　　ワケ　　　　　ワカ　　　　　ラン
+　 ∧＿∧　　　∧＿∧　　　　∧＿∧
+　（　・∀・）　　（　・∀・）　　　（　・∀・）
+⊂　⊂　 ）　　（　Ｕ　　つ　　⊂__へ　つ
+　<　<　<　　　　）　）　）　　　　　（＿）| 　（＿（＿）　　（_＿）＿）　　　 彡（_＿）
+</pre>
+
+<div class="box">
+コマンドの実行に失敗しました。<br><br>
+
+405 Method Not Allowed<br>
+このリソースは要求されたHTTPメソッドをサポートしていません。
+利用可能なメソッドを確認してください。
+
+</div>
+
+<div class="menu">
+<p>▶ RETURN TO TOP PAGE</p>
+<p>▶ RETRY CONNECTION</p>
+<p class="blink">▶ PRESS ENTER TO CONTINUE</p>
+</div>
+
+</main>
 </body>
 </html>
